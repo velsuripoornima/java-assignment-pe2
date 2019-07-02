@@ -2,19 +2,21 @@ package com.stackroute.pe2;
 
 import java.io.*;
 
-public class ReadFolder {
-    public ReadFolder(){
+public class ReadFolder
+{
+    public ReadFolder() //creating constructor for class
+    {
 
     }
-    public String[] getFolderFilenames(String filepath, String extention)
+    public String[] getFolderFilenames(String filepath, String extention) //taking method contains two parameters
     {
         try {
 
-            File folder = new File(filepath);
+            File folder = new File(filepath);  //creating instance variable for class file
 
             int i = 0;
 
-            File[] files = folder.listFiles(new FilenameFilter() {
+            File[] files = folder.listFiles(new FilenameFilter() {  //we are using inbuilt method
                 public boolean accept(File dir, String name) {
                     return name.toLowerCase().endsWith("." + extention);
                 }

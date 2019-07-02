@@ -3,20 +3,21 @@ import java.util.Arrays;
 import java.sql.Array;
 
 public class StudentGradeCaluculator {
-    public class Result {
+    public class Result  //creating result class for return all the
+    {
         float average;
         int minimun;
         int maximum;
     }
 
-    public StudentGradeCaluculator()
+    public StudentGradeCaluculator() //creating constructor for class
     {
 
     }
 
-    public Result calculateGrades(int number, int[] grades)
+    public Result calculateGrades(int number, int[] grades) //this method return stmts
     {
-        Result result = new Result();
+        Result result = new Result();  //creating object to the class
 
         if(number != grades.length)
         {

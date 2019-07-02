@@ -29,6 +29,8 @@ public class CheckPalindromOrNotTest {
         assertEquals("palindrom",checkPalindromOrNot.palindrom("@#@"));
 
         assertEquals("palindrom",checkPalindromOrNot.palindrom(" "));
+
+
     }
     @Test
     public void testForCheckPalindronOrNotFailure(){
@@ -43,6 +45,8 @@ public class CheckPalindromOrNotTest {
 
         assertEquals("Not a palindrom",checkPalindromOrNot.palindrom(" 0"));
 
-        assertEquals(null,checkPalindromOrNot.palindrom(null));
+        assertNotEquals("palindrom",checkPalindromOrNot.palindrom("-1"));
+
+        assertNull(null,checkPalindromOrNot.palindrom(null));
     }
 }

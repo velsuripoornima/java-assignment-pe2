@@ -4,12 +4,13 @@ public class FactorialRangeChecker {
     public FactorialRangeChecker(){
 
     }
-    public String intFactorial(int number){
+    public String intFactorial(int number)  //this is checks the given inputis integer range and factorial of that number
+    {
             int fact = 1;
 
             while(number > 0)
             {
-                fact = fact * (number--);
+                fact = fact * (number--);  //condition for factorial
             }
             System.out.println(fact);
 
@@ -24,13 +25,13 @@ public class FactorialRangeChecker {
         }
 
 
-        public String longfactorial(int number)
+        public String longfactorial(long number)  //it checks the given number should be in the range long
         {
             long fact = 1;
 
             while(number > 0)
             {
-                fact = fact * (number--);
+                fact = fact * (number--);  //contion for factorial
             }
             System.out.println(fact);
 

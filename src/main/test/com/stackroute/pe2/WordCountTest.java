@@ -10,14 +10,17 @@ public class WordCountTest {
     public static WordCount wordCount;
     @BeforeClass
     public static void setUp(){
+
         wordCount=new WordCount();
     }
     @AfterClass
     public static void tearDown(){
+
         wordCount=null;
     }
     @Test
-    public void filpath(){
+    public void givenFilPathShouldReturnContentMessage()
+    {
         assertEquals(" ",wordCount.countNoOfCharacter("/home/poornima/Desktop/file.txt"));
     }
 

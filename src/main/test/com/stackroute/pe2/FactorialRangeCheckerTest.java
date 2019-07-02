@@ -7,15 +7,20 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FactorialRangeCheckerTest {
+
     public static FactorialRangeChecker factorialRangeChecker;
+
     @BeforeClass
     public static void setUp(){
+
         factorialRangeChecker=new FactorialRangeChecker();
     }
+
     @AfterClass
     public static void tearDown(){
         factorialRangeChecker=null;
     }
+
     @Test
     public void testForintFactorialSuccess()
     {
@@ -28,6 +33,7 @@ public class FactorialRangeCheckerTest {
     public void testForintFactorialFailure()
     {
         assertEquals("factorial out of range",factorialRangeChecker.intFactorial(20));
+        assertNotEquals("factorial out of range",factorialRangeChecker.intFactorial(-12));
     }
 
     @Test
@@ -44,6 +50,7 @@ public class FactorialRangeCheckerTest {
     public void testForLongFactorialFailure()
     {
         assertEquals("factorial out of range",factorialRangeChecker.longfactorial(30));
+        assertNotEquals("factorial out of range",factorialRangeChecker.intFactorial(-12));
     }
 
 }

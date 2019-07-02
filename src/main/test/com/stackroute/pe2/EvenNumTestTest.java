@@ -24,6 +24,8 @@ public class EvenNumTestTest {
         assertEquals(true, EvenNumTest.isEven(0));
 
         assertEquals(true, EvenNumTest.isEven(-6524));
+
+        assertNotEquals(true,EvenNumTest.isEven(-23));
     }
 
     @Test

@@ -7,13 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ReadContentOfAFileTest {
+
     public static ReadContentOfAFile readContentOfAFile;
+
     @BeforeClass
     public static void setUp(){
+
         readContentOfAFile=new ReadContentOfAFile();
     }
     @AfterClass
     public static void tearDown(){
+
         readContentOfAFile=null;
     }
     @Test

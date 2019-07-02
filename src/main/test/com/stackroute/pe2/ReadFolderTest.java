@@ -11,16 +11,19 @@ public class ReadFolderTest {
 
     @BeforeClass
     public static void setUp() {
+
         readFolder = new ReadFolder();
     }
 
     @AfterClass
     public static void tearDown() {
+
         readFolder = null;
     }
 
     @Test
-    public void testForGetTextFilenamesOfFolder() {
+    public void testForGetTextFilenamesOfFolder()
+    {
         String[] filenames = readFolder.getFolderFilenames("/home/poornima/Desktop", "txt");
 
         assertEquals(1, filenames.length);

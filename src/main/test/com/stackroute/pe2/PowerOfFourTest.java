@@ -25,12 +25,16 @@ public class PowerOfFourTest {
 
         assertEquals(true,powerOfFour.isPower(64));
 
+
+
     }
     @Test
     public void testPowerOfFourFailure(){
         assertEquals(false,powerOfFour.isPower(0));
 
         assertEquals(false,powerOfFour.isPower(-4));
+
+        assertFalse(powerOfFour.isPower(-1));
     }
 
 }

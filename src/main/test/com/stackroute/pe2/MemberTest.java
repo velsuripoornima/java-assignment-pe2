@@ -7,18 +7,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MemberTest {
+
     public static Member member;
     public static Member.MemberVariable memberVariable;
+
     @BeforeClass
     public static void setUp(){
         member=new Member();
         memberVariable=member.new MemberVariable();
     }
+
     @AfterClass
     public static void tearDown(){
         member=null;
         memberVariable=null;
     }
+
     @Test
     public void givenStringOneIntOneDoubleShouldReturnResultMessage(){
 
