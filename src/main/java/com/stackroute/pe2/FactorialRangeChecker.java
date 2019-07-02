@@ -12,7 +12,6 @@ public class FactorialRangeChecker {
             {
                 fact = fact * (number--);  //condition for factorial
             }
-            System.out.println(fact);
 
             if(fact < 0)
             {
@@ -33,8 +32,6 @@ public class FactorialRangeChecker {
             {
                 fact = fact * (number--);  //contion for factorial
             }
-            System.out.println(fact);
-
             if(fact < 0)
             {
                 return "factorial out of range";

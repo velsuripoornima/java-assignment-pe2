@@ -17,7 +17,7 @@ public class EvenNumTestTest {
         evenNumTest=null;
     }
     @Test
-    public void testForIsEvenSuccess()
+    public void givenNumberShouldReturnTestForIsEvenSuccessMessage()
     {
         assertEquals(true, EvenNumTest.isEven(24));
 
@@ -29,7 +29,7 @@ public class EvenNumTestTest {
     }
 
     @Test
-    public void testForIsEvenFailure()
+    public void givenNumberShouldReturnTestForIsEvenFailureMessage()
     {
         assertEquals(false, EvenNumTest.isEven(245));
 

@@ -18,7 +18,7 @@ public class CheckPalindromOrNotTest {
         checkPalindromOrNot=null;
     }
     @Test
-    public void testForCheckPalindronOrNot(){
+    public void givenStringShouldReturnTestForCheckPalindronOrNotMessage(){
         //Arrange
         //Act,assert
 
@@ -33,7 +33,7 @@ public class CheckPalindromOrNotTest {
 
     }
     @Test
-    public void testForCheckPalindronOrNotFailure(){
+    public void givenStringShouldReturnTestForCheckPalindronOrNotFailureMessage(){
         //Arrange
         //Act,assert
 

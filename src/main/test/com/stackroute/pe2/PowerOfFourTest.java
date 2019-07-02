@@ -9,15 +9,17 @@ import static org.junit.Assert.*;
 public class PowerOfFourTest {
     public static PowerOfFour powerOfFour;
     @BeforeClass
-    public static void setUp(){
+    public static void setUp()
+    {
         powerOfFour=new PowerOfFour();
     }
     @AfterClass
     public static void tearDown(){
+
         powerOfFour=null;
     }
     @Test
-    public void testPowerOfFourSuccess(){
+    public void givenNumberShouldReturnTestPowerOfFourSuccessMessage(){
         //Arrange
         //Act
         //Assert
@@ -29,7 +31,8 @@ public class PowerOfFourTest {
 
     }
     @Test
-    public void testPowerOfFourFailure(){
+    public void givenNumberShouldRetunTestPowerOfFourFailureMessages(){
+
         assertEquals(false,powerOfFour.isPower(0));
 
         assertEquals(false,powerOfFour.isPower(-4));

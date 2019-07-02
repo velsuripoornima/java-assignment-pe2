@@ -33,15 +33,6 @@ public class ReadFolderTest {
 //        assertEquals("sample.txt", filenames[1]);
     }
 
-//    @Test()
-//    public void testForGetPdfFilenamesOfFolder() {
-//        String[] filenames = readFolder.getFolderFilenames("/home/poornima/Desktop", "pdf");
-//
-//        assertEquals(1, filenames.length);
-//
-//        assertEquals("demo.pdf", filenames[0]);
-//    }
-
 
     @Test()
     public void testForGetFilenamesOfFolderFailure() {

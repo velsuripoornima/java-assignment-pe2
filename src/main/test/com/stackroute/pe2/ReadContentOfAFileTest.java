@@ -15,6 +15,7 @@ public class ReadContentOfAFileTest {
 
         readContentOfAFile=new ReadContentOfAFile();
     }
+
     @AfterClass
     public static void tearDown(){
 

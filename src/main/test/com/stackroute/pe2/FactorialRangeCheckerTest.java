@@ -18,11 +18,12 @@ public class FactorialRangeCheckerTest {
 
     @AfterClass
     public static void tearDown(){
+
         factorialRangeChecker=null;
     }
 
     @Test
-    public void testForintFactorialSuccess()
+    public void givenNumberShouldReturnTestForintFactorialSuccessMessage()
     {
         assertEquals("6",factorialRangeChecker.intFactorial(3));
         assertEquals("1932053504",factorialRangeChecker.intFactorial(13));
@@ -30,14 +31,14 @@ public class FactorialRangeCheckerTest {
     }
 
     @Test
-    public void testForintFactorialFailure()
+    public void givenNumberShouldReturnTestForintFactorialFailureMessage()
     {
         assertEquals("factorial out of range",factorialRangeChecker.intFactorial(20));
         assertNotEquals("factorial out of range",factorialRangeChecker.intFactorial(-12));
     }
 
     @Test
-    public void testForLongFactorialSuccess()
+    public void givenNumberShouldRetunTestForLongFactorialSuccessMessage()
     {
         assertEquals("6",factorialRangeChecker.intFactorial(3));
         assertEquals("1932053504",factorialRangeChecker.intFactorial(13));
@@ -47,7 +48,7 @@ public class FactorialRangeCheckerTest {
     }
 
     @Test
-    public void testForLongFactorialFailure()
+    public void givenNumberShouldReturnTestForLongFactorialFailureMessage()
     {
         assertEquals("factorial out of range",factorialRangeChecker.longfactorial(30));
         assertNotEquals("factorial out of range",factorialRangeChecker.intFactorial(-12));
